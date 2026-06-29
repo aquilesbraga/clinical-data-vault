@@ -1,0 +1,77 @@
+[0m10:41:12.789120 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1bb040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f782050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f7824a0>]}
+
+
+============================== 10:41:12.791343 | 23675e70-ddc2-4c5e-89ae-a1f5220680ab ==============================
+[0m10:41:12.791343 [info ] [MainThread]: Running with dbt=1.12.0-b3
+[0m10:41:12.791643 [debug] [MainThread]: running dbt with arguments {'warn_error': 'None', 'version_check': 'True', 'log_cache_events': 'False', 'target_path': 'None', 'maximum_seed_size_mib': '1', 'quiet': 'False', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'invocation_command': 'dbt init clinical_vault', 'debug': 'False', 'printer_width': '80', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'introspect': 'True', 'static_parser': 'True', 'use_colors': 'True', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'fail_fast': 'False', 'no_print': 'None', 'profiles_dir': '/Users/aquilesbraga/.dbt', 'log_path': 'logs', 'write_json': 'True', 'log_format': 'default'}
+[0m10:41:12.800364 [info ] [MainThread]: Creating dbt configuration folder at /Users/aquilesbraga/.dbt
+[0m10:41:12.801363 [debug] [MainThread]: Starter project path: /Users/aquilesbraga/.pyenv/versions/3.10.7/lib/python3.10/site-packages/dbt/include/starter_project
+[0m10:41:12.804623 [info ] [MainThread]: Setting up your profile.
+[0m10:46:21.174550 [info ] [MainThread]: Profile clinical_vault written to /Users/aquilesbraga/.dbt/profiles.yml using target's profile_template.yml and your supplied values.
+[0m10:46:21.178676 [info ] [MainThread]: Running dbt debug to validate the project...
+[0m10:46:21.180584 [info ] [MainThread]: dbt version: 1.12.0-b3
+[0m10:46:21.181472 [info ] [MainThread]: python version: 3.10.7
+[0m10:46:21.182205 [info ] [MainThread]: python path: /Users/aquilesbraga/.pyenv/versions/3.10.7/bin/python3.10
+[0m10:46:21.182847 [info ] [MainThread]: os info: macOS-26.5.1-arm64-arm-64bit
+[0m10:46:21.210796 [info ] [MainThread]: Using profiles dir at /Users/aquilesbraga/.dbt
+[0m10:46:21.211227 [info ] [MainThread]: Using profiles.yml file at /Users/aquilesbraga/.dbt/profiles.yml
+[0m10:46:21.211505 [info ] [MainThread]: Using dbt_project.yml file at /Users/aquilesbraga/projetos-dados/clinical-data-vault/clinical_vault/dbt_project.yml
+[0m10:46:21.212193 [info ] [MainThread]: adapter type: postgres
+[0m10:46:21.212510 [info ] [MainThread]: adapter version: 1.10.2
+[0m10:46:21.277316 [info ] [MainThread]: Configuration:
+[0m10:46:21.277654 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m10:46:21.277834 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m10:46:21.277993 [info ] [MainThread]: Required dependencies:
+[0m10:46:21.278240 [debug] [MainThread]: Executing "git --help"
+[0m10:46:21.292835 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify tags\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m10:46:21.293289 [debug] [MainThread]: STDERR: "b''"
+[0m10:46:21.293475 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m10:46:21.293665 [info ] [MainThread]: Connection:
+[0m10:46:21.293868 [info ] [MainThread]:   host: localhost
+[0m10:46:21.294032 [info ] [MainThread]:   port: 5432
+[0m10:46:21.294196 [info ] [MainThread]:   user: aquilesbraga
+[0m10:46:21.294356 [info ] [MainThread]:   database: clinical_vault
+[0m10:46:21.294514 [info ] [MainThread]:   schema: public
+[0m10:46:21.294671 [info ] [MainThread]:   connect_timeout: 10
+[0m10:46:21.294830 [info ] [MainThread]:   role: None
+[0m10:46:21.294986 [info ] [MainThread]:   search_path: None
+[0m10:46:21.295142 [info ] [MainThread]:   keepalives_idle: 0
+[0m10:46:21.295297 [info ] [MainThread]:   sslmode: None
+[0m10:46:21.295452 [info ] [MainThread]:   sslcert: None
+[0m10:46:21.295605 [info ] [MainThread]:   sslkey: None
+[0m10:46:21.295762 [info ] [MainThread]:   sslrootcert: None
+[0m10:46:21.295916 [info ] [MainThread]:   application_name: dbt
+[0m10:46:21.296069 [info ] [MainThread]:   retries: 1
+[0m10:46:21.296421 [info ] [MainThread]: Registered adapter: postgres=1.10.2
+[0m10:46:21.824981 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m10:46:21.863504 [debug] [MainThread]: Using postgres connection "debug"
+[0m10:46:21.863716 [debug] [MainThread]: On debug: select 1 as id
+[0m10:46:21.863864 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m10:46:21.962555 [debug] [MainThread]: SQL status: SELECT 1 in 0.099 seconds
+[0m10:46:21.963330 [debug] [MainThread]: On debug: Close
+[0m10:46:21.963598 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m10:46:21.963851 [info ] [MainThread]: [32mAll checks passed![0m
+[0m10:46:21.964158 [info ] [MainThread]: Your new dbt project "clinical_vault" was created!
+Initialized new project in /Users/aquilesbraga/projetos-dados/clinical-data-vault/clinical_vault/clinical_vault
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m10:46:21.971957 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 309.2358, "process_in_blocks": "0", "process_kernel_time": 0.183106, "process_mem_max_rss": "150142976", "process_out_blocks": "0", "process_user_time": 1.560238}
+[0m10:46:21.972406 [debug] [MainThread]: Command `dbt init` succeeded at 10:46:21.972333 after 309.24 seconds
+[0m10:46:21.972751 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m10:46:21.973117 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e1bb040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ec38040>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f6ccd30>]}
+[0m10:46:21.973507 [debug] [MainThread]: Flushing usage events
+[0m10:46:22.938670 [debug] [MainThread]: An error was encountered while trying to flush usage events
