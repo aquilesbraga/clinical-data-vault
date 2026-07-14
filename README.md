@@ -1,4 +1,4 @@
-# Clinical Data Vault 🏥
+# Clinical Data Vault 
 
 Pipeline de dados clínicos end-to-end com arquitetura **Data Vault 2.0**, simulando a integração de fontes heterogêneas de uma rede de saúde diagnóstica.
 
